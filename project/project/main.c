@@ -8,19 +8,17 @@
 
 #include <stdio.h>
 int main(int argc, char *arg[]) {
-    int x,y,z,m;
-    int a,b,c;
-
-  x= 1;
-  a= 3;
-  b= 4;
-  c= 5;
-  z= 2;
-
-  y= a*x*x + b*x + c;
-  m= (x+y+z)/3;
+    int x, y;
+   
+    printf("input two integers : ");
+     
+    scanf("%i %i", &x, &y);
     
-printf("y=%d, m=%d\n", y, m);
-
+    printf("+ result is : %i\n",x+y);
+    printf("- result is : %i\n",x-y);
+    printf("* result is : %i\n",x*y);
+    printf("/ result is : %i\n",x/y);
+    printf("%% result is : %i\n",x%y);
+    
     return 0;
 }
