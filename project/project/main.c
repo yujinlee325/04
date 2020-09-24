@@ -8,17 +8,18 @@
 
 #include <stdio.h>
 int main(int argc, char *arg[]) {
-    int x, y;
-   
-    printf("input two integers : ");
-     
-    scanf("%i %i", &x, &y);
+    int input;
+    int sec, min;
     
-    printf("+ result is : %i\n",x+y);
-    printf("- result is : %i\n",x-y);
-    printf("* result is : %i\n",x*y);
-    printf("/ result is : %i\n",x/y);
-    printf("%% result is : %i\n",x%y);
+    printf("input second : ");
+    
+    scanf("%i", &input);
+    
+    min = input / 60;
+    
+    sec = input % 60;
+    
+    printf("the time is %i : %i\n", min, sec);
     
     return 0;
 }
