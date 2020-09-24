@@ -9,14 +9,17 @@
 #include <stdio.h>
 int main(int argc, char *arg[]) {
     int input;
-    int sec, min;
+    int hour, sec, min;
     
-    printf("input year : ");
-    
+    printf("input sec : ");
     scanf("%i", &input);
     
-    printf("is %i leap year? %i\n", input,
-                                    (input%4==0 && input%100!=0)||(input%400==0) );
+    hour = input/3600 ;
+    min = (input%3600)/60 ;
+    sec = input%60 ;
+    
+    
+    printf("the time is %i : %i : %i\n", hour, min, sec);
     
     return 0;
 }
